@@ -2,23 +2,15 @@
 using namespace std;
 
 int main() {
-    int num1, num2, num3;
+    int n;
+    cout << "Enter a number: ";
+    cin >> n;
 
-    cout << "Enter three numbers: ";
-    cin >> num1 >> num2 >> num3;
-
-    if (num1 > num2) {
-        if (num1 > num3) {
-            cout << "The largest number is: " << num1 << endl;
-        } else {
-            cout << "The largest number is: " << num3 << endl;
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= i; j++) {
+            cout << "*";
         }
-    } else {
-        if (num2 > num3) {
-            cout << "The largest number is: " << num2 << endl;
-        } else {
-            cout << "The largest number is: " << num3 << endl;
-        }
+        cout << endl;
     }
 
     return 0;
